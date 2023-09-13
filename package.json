@@ -6,7 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"test": "jest"
 	},
 	"dependencies": {
 		"@types/node": "20.5.9",
@@ -22,5 +23,8 @@
 		"react-intersection-observer": "^9.5.2",
 		"sass": "^1.66.1",
 		"typescript": "5.2.2"
+	},
+	"devDependencies": {
+		"jest": "^29.7.0"
 	}
 }

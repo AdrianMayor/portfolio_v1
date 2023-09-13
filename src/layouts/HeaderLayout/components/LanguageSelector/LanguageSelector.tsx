@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles.module.scss";
+import styles from "./LanguageSelector.module.scss";
 import i18n from "../../../../i18n/i18n";
 
 const { languageSelector, translate, openMenu } = styles;
