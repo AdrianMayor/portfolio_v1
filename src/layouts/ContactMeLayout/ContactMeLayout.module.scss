@@ -4,7 +4,7 @@
 	// min-height: 100vh;
 	height: 100%;
 	padding-top: 97px;
-
+	overflow: auto;
 	> * {
 		box-sizing: border-box;
 	}
@@ -13,6 +13,10 @@
 		text-align: center;
 		margin-bottom: 2rem;
 		margin-top: 2.5rem;
+
+		@media (max-height: 800px) {
+			margin-top: 0.5rem;
+		}
 	}
 	&__form {
 		gap: 40px;
@@ -60,6 +64,11 @@
 			"a b"
 			"c c"
 			"x d";
+
+		@media (max-width: 1400px) {
+			grid-column-gap: 20px;
+			grid-row-gap: 0px;
+		}
 
 		h2 {
 			margin-bottom: 1rem;

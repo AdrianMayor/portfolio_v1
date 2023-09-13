@@ -13,7 +13,7 @@ const ContactMeLayout = () => {
 	const contactLabel = t("Contact");
 
 	const windowSize = useWindowSize();
-
+	console.log(windowSize.height);
 	return (
 		<section className={contactMe} id='contactMe'>
 			<div className={windowSize.width && windowSize.width > 1024 ? "column_3" : "column_1"}>
@@ -39,7 +39,7 @@ const ContactMeLayout = () => {
 							<textarea
 								name=''
 								id=''
-								rows={windowSize.width && windowSize.width > 1024 ? 10 : 5}
+								rows={windowSize.width && windowSize.width > 1424 ? 10 : 5}
 								className='text'
 							></textarea>
 						</div>
