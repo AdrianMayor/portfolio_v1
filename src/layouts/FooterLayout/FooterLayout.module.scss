@@ -31,8 +31,15 @@
 	bottom: 78px;
 	left: 145px;
 	position: absolute;
-	width: 44rem;
+	width: 45rem;
 	height: 16rem;
+	z-index: -1;
+
+	@media (max-width: 1400px) {
+		transform: scale(0.8);
+		bottom: 55px;
+		left: 75px;
+	}
 
 	@media (max-width: 1024px) {
 		background: url("../../../public/img/illustration\ [Mobile].png");

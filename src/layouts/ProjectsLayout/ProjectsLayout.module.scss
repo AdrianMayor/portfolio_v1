@@ -1,4 +1,5 @@
-$cardSize: 350px;
+$bigCardSize: 350px;
+$smallCardSize: 240px;
 
 .projects {
 	height: 100%;
@@ -66,9 +67,18 @@ $cardSize: 350px;
 	}
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1400px) {
 	.projects__showcase {
-		grid-template-columns: repeat(3, $cardSize);
+		grid-template-columns: repeat(3, $bigCardSize);
+		justify-content: center;
+		gap: 1.5rem;
+		position: relative;
+	}
+}
+
+@media (min-width: 1024px) {
+	.projects__showcase {
+		grid-template-columns: repeat(3, $smallCardSize);
 		justify-content: center;
 		gap: 1.5rem;
 		position: relative;
