@@ -27,9 +27,6 @@
 
 @media (min-width: 960px) {
 	.aboutMe {
-		background-image: url("/img/me.png");
-		background-repeat: no-repeat;
-		background-position: bottom left;
 		position: relative;
 		&__wrapper {
 			// position: relative;
@@ -37,6 +34,23 @@
 			grid-template-columns: 1fr 1fr;
 			align-items: center;
 			overflow: hidden;
+		}
+
+		&::before {
+			content: "";
+			background-image: url("/img/me.png");
+			width: 26rem;
+			height: 45rem;
+			background-repeat: no-repeat;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+
+			@media (max-width: 1380px) {
+				transform: scale(0.9);
+				bottom: -40px;
+				left: -22px;
+			}
 		}
 	}
 }
