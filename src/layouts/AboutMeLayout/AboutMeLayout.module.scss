@@ -1,0 +1,42 @@
+.aboutMe {
+	// height: 100vh;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 70px;
+	&__wrapper {
+		display: grid;
+		align-content: space-evenly;
+		gap: 1rem;
+		div {
+			max-width: 550px;
+		}
+	}
+	&__range {
+		color: transparent;
+	}
+	&__actions {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+	}
+	&__info {
+		margin: 26px 0 24px;
+	}
+}
+
+@media (min-width: 960px) {
+	.aboutMe {
+		background-image: url("/img/me.png");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		position: relative;
+		&__wrapper {
+			// position: relative;
+			//height: 90vh;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			overflow: hidden;
+		}
+	}
+}

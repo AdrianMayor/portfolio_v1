@@ -1,0 +1,21 @@
+@use "./reset.scss";
+@use "./colors.scss";
+@use "./texts.scss";
+@use "./grid-system.scss";
+@use "./fonts.scss";
+
+html {
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+
+	background-color: colors.$color-white-background;
+	font-family: "Montserrat";
+
+	overflow-x: hidden;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}

@@ -1,0 +1,100 @@
+@use "./colors.scss" as colors;
+@use "./fonts.scss" as fonts;
+
+.h1TitleText {
+	color: colors.$color-black-primary;
+	font-family: fonts.$secondary-font;
+	font-size: fonts.$h1-mobile-font-size;
+	line-height: fonts.$h1-mobile-line-height;
+	letter-spacing: fonts.$h1-mobile-letter-spacing;
+	font-weight: 400;
+	margin-bottom: 1rem;
+
+	@media (min-width: 1024px) {
+		font-size: fonts.$h1-desktop-font-size;
+		line-height: fonts.$h1-desktop-line-height;
+		letter-spacing: fonts.$h1-desktop-letter-spacing;
+	}
+}
+
+.h2DetailText {
+	color: colors.$color-gradient-horizontal;
+	font-family: fonts.$secondary-font;
+	font-size: fonts.$h2-detail-font-size;
+	letter-spacing: fonts.$h2-detail-letter-spacing;
+}
+
+.h2TitleText {
+	color: colors.$color-black-primary;
+	font-family: fonts.$secondary-font;
+	font-size: fonts.$h2-title-font-size;
+	letter-spacing: fonts.$h2-title-letter-spacing;
+	font-weight: 400;
+}
+
+.footerText {
+	color: colors.$color-white-background;
+	font-family: fonts.$secondary-font;
+	font-size: fonts.$footer-font-size;
+	letter-spacing: fonts.$footer-font-size-letter-spacing;
+}
+
+.navBarText {
+	color: colors.$color-black-primary;
+	font-family: fonts.$primary-font;
+	font-size: fonts.$mobile-menu-active-font-size;
+
+	@media (min-width: 1024px) {
+		font-size: fonts.$desktop-menu-active-font-size;
+	}
+
+	&.Selected {
+		font-weight: fonts.$mobile-menu-active-font-weight;
+
+		@media (min-width: 1024px) {
+			font-weight: fonts.$desktop-menu-active-font-weight;
+		}
+	}
+}
+
+.navBarLangText {
+	color: colors.$color-black-primary;
+	font-family: fonts.$primary-font;
+	font-size: fonts.$mobile-menu-lang-font-size;
+
+	@media (min-width: 1024px) {
+		font-size: fonts.$desktop-menu-lang-font-size;
+	}
+}
+
+.yearFooter {
+	color: colors.$color-white-background;
+	font-family: fonts.$primary-font;
+	font-size: fonts.$year-project-detail-font-size;
+}
+
+.bold {
+	color: colors.$color-black-primary;
+	font-family: fonts.$primary-font;
+	font-weight: fonts.$bold-font-weight;
+	font-size: 1rem;
+}
+
+.inputLabelText {
+	color: colors.$color-black-primary;
+	font-family: fonts.$primary-font;
+	font-weight: fonts.$input-label-font-weight;
+	letter-spacing: fonts.$input-label-letter-spacing;
+}
+
+.tagText {
+	color: colors.$color-black-primary;
+	font-family: fonts.$primary-font;
+	font-size: fonts.$mobile-tag-font-size;
+	font-weight: fonts.$tag-font-weight;
+	font-variant: small-caps;
+
+	@media (min-width: 1024px) {
+		font-size: fonts.$desktop-tag-font-size;
+	}
+}

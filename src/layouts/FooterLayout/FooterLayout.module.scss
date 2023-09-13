@@ -1,0 +1,52 @@
+@use "@src/styles/grid-system" as gridSystem;
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	padding: 22px 0;
+	flex-wrap: wrap;
+	position: absolute;
+	// z-index: 3;
+	&__name {
+		padding-right: 8px;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		justify-content: center;
+	}
+}
+.socials {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.footer::before {
+	background: url("../../../public/img/illustration\ [Desktop].png");
+	content: "";
+	background-repeat: no-repeat;
+	bottom: 78px;
+	left: 145px;
+	position: absolute;
+	width: 44rem;
+	height: 16rem;
+
+	@media (max-width: 1024px) {
+		background: url("../../../public/img/illustration\ [Mobile].png");
+		background-repeat: no-repeat;
+		width: 20.5rem;
+		height: 7rem;
+		bottom: 138px;
+		left: 20px;
+	}
+}
+
+@media (min-width: gridSystem.$mediaDesktop) {
+	.footer__wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

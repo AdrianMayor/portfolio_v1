@@ -1,0 +1,76 @@
+$cardSize: 350px;
+
+.projects {
+	height: 100%;
+	padding-top: 97px;
+	// display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+	h2 {
+		text-align: center;
+		margin: 0rem auto 2rem;
+	}
+
+	&__showcase {
+		margin: 1rem;
+		display: grid;
+		gap: 2rem;
+	}
+}
+.card {
+	border-radius: 16px;
+	background: url("/img/img-placeholder.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 230px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+	&__header,
+	&__body {
+		$transition: 200ms ease-out;
+		display: flex;
+		padding: 1rem 0;
+		opacity: 0;
+		gap: 1rem;
+		transition: opacity $transition, background-color $transition;
+	}
+	&__header {
+		border-radius: 16px 16px 0 0;
+		justify-content: space-around;
+		&__techStack {
+			display: flex;
+			gap: 1rem;
+		}
+	}
+	&__body {
+		flex-grow: 1;
+		border-radius: 0 0 16px 16px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&__links {
+			display: flex;
+			gap: 1rem;
+		}
+	}
+	&:hover,
+	&:focus,
+	&:focus-within {
+		.card__header,
+		.card__body {
+			opacity: 1;
+			background-color: rgba(0, 0, 0, 0.25);
+		}
+	}
+}
+
+@media (min-width: 960px) {
+	.projects__showcase {
+		grid-template-columns: repeat(3, $cardSize);
+		justify-content: center;
+		gap: 1.5rem;
+		position: relative;
+	}
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Fira+Code&family=Montserrat:wght@400;500;600;700&display=swap");
+
+// Montserrat font
+$primary-font: "montserrat";
+
+// Font size
+$mobile-menu-active-font-size: 2rem;
+$mobile-menu-not-active: 2rem;
+$mobile-menu-lang-font-size: 2rem;
+
+$desktop-menu-active-font-size: 1.25rem;
+$desktop-menu-not-active-font-size: 1.25rem;
+$desktop-menu-lang-font-size: 1rem;
+
+$year-project-detail-font-size: 1.5rem;
+$desktop-tag-font-size: 0.875rem;
+$mobile-tag-font-size: 0.75rem;
+
+// Letter Spacing
+$input-label-letter-spacing: -0.05rem;
+$paragraph-letter-spacing: 1.5rem;
+
+// Font weight
+$mobile-menu-active-font-weight: 700;
+$desktop-menu-active-font-weight: 700;
+$bold-font-weight: 700;
+$input-label-font-weight: 600;
+$tag-font-weight: 500;
+
+// Candal font
+$secondary-font: "candal";
+
+// Font Size
+$h1-mobile-font-size: 5.625rem;
+$h1-desktop-font-size: 4rem;
+$h2-detail-font-size: 2rem;
+$h2-title-font-size: 2.5rem;
+$footer-font-size: 1.5rem;
+
+// Letter spacing
+$h1-mobile-letter-spacing: -0.28125rem;
+$h1-desktop-letter-spacing: -0.2rem;
+$h2-detail-letter-spacing: -0.1rem;
+$h2-title-letter-spacing: -0.125rem;
+$footer-font-size-letter-spacing: -0.075rem;
+
+// Line height
+$h1-mobile-line-height: 5.34375rem;
+$h1-desktop-line-height: 3.8rem;
+
+html,
+body,
+main {
+	font-family: "montserrat";
+}
