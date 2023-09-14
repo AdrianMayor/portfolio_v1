@@ -1,11 +1,13 @@
 import IconSend from "../../../public/icon/icon-send.svg";
+import IconSendWhite from "../../../public/icon/icon-send-white.svg";
 import Buttons from "../../common/Buttons";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import styles from "./ContactMeLayout.module.scss";
 import { useWindowSize } from "@src/hooks/useWindowsSize";
+import ButtonIcon from "@src/common/Buttons/components/ButtonIcon";
 
-const { contactMe, contactMe__form, contactMe__form__wrapper, gradient, actions } = styles;
+const { contactMe, contactMe__form, contactMe__form__wrapper, gradient, actions, sendButton } = styles;
 
 const ContactMeLayout = () => {
 	const { t } = useTranslation();
@@ -13,7 +15,6 @@ const ContactMeLayout = () => {
 	const contactLabel = t("Contact");
 
 	const windowSize = useWindowSize();
-	console.log(windowSize.height);
 	return (
 		<section className={contactMe} id='contactMe'>
 			<div className={windowSize.width && windowSize.width > 1024 ? "column_3" : "column_1"}>
@@ -44,11 +45,11 @@ const ContactMeLayout = () => {
 							></textarea>
 						</div>
 					</div>
-					<Buttons goTo='mailto:dsanchez@gmail.com'>
-						<div className={actions}>
-							<span className='bold'>Send</span>
-							<Image src={IconSend} alt='Send your email' />
-						</div>
+					<Buttons goTo='mailto:adrianmayorsantana@gmail.com'>
+						{/* <span className='bold'>Send</span> */}
+						<ButtonIcon alt='Send your email' icon={IconSend} iconWhite={IconSendWhite} />
+
+						{/* <Image src={IconSend} alt='Send your email' className={sendButton} /> */}
 					</Buttons>
 				</form>
 			</div>
