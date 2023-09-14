@@ -26,6 +26,10 @@
 	}
 	&.translate::after {
 		transform: translateX(calc(5.8rem + 10px - 2px));
+
+		@media (min-width: 1024px) {
+			transform: translateX(calc(4rem + 10px - 2px));
+		}
 	}
 }
 

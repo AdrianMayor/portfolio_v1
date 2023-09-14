@@ -39,6 +39,20 @@
 	letter-spacing: fonts.$footer-font-size-letter-spacing;
 }
 
+.projectCardDetail {
+	color: colors.$color-white-background;
+	font-family: fonts.$secondary-font;
+	font-weight: fonts.$bold-font-weight;
+	font-size: 1rem;
+}
+
+.projectCardTitle {
+	color: colors.$color-white-background;
+	font-family: fonts.$secondary-font;
+	font-weight: fonts.$bold-font-weight;
+	font-size: 1.25rem;
+}
+
 .navBarText {
 	color: colors.$color-black-primary;
 	font-family: fonts.$primary-font;

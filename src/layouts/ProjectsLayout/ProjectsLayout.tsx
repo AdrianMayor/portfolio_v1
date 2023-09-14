@@ -1,5 +1,5 @@
-import IconGithub from "../../../public/icon/icon-github.svg";
-import IconGoTo from "../../../public/icon/icon-goto.svg";
+import IconGithubWhite from "../../../public/icon/icon-github-white.svg";
+import IconGoToWhite from "../../../public/icon/icon-goto-white.svg";
 import { PROJECTS_MOCK } from "../../constants/projects-mock";
 import { NAMESPACES } from "../../i18n/namespaces";
 import Image from "next/image";
@@ -29,7 +29,7 @@ const ProjectsLayout = () => {
 					{PROJECTS_MOCK.map((project) => (
 						<div className={card} key={`${project.title}`}>
 							<div className={card__header}>
-								<span className='text__white'>{project.date}</span>
+								<span className='projectCardDetail'>{project.date}</span>
 								<div className={card__header__techStack}>
 									{project.techStack.map((techStack) => (
 										<Image src={techStack.icon} alt={techStack.alt} key={techStack.alt} />
@@ -37,13 +37,13 @@ const ProjectsLayout = () => {
 								</div>
 							</div>
 							<div className={card__body}>
-								<span className='text__white__bigger'>{project.title}</span>
+								<span className='projectCardTitle'>{project.title}</span>
 								<div className={card__body__links}>
 									<Link href={project.githubLink}>
-										<Image src={IconGithub} alt={visitGithubAlt} />
+										<Image src={IconGithubWhite} alt={visitGithubAlt} />
 									</Link>
 									<Link href={project.pageLink}>
-										<Image src={IconGoTo} alt={visitPageAlt} />
+										<Image src={IconGoToWhite} alt={visitPageAlt} />
 									</Link>
 								</div>
 							</div>
