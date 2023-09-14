@@ -12,11 +12,7 @@ const LanguageSelector: React.FC<ILanguageSelector> = ({ open }) => {
 	const langClassName = language === "en" ? `${openedClassName} ${translate}` : openedClassName;
 
 	return (
-		<div
-			//   className={`${languageSelector} ${language === "en" ? translate : ""}`}
-			className={langClassName}
-			data-testid={"header-menu-language-selector"}
-		>
+		<div className={langClassName} data-testid={"header-menu-language-selector"}>
 			<span
 				className={"navBarLangText"}
 				onClick={() => changeLanguage("es")}
